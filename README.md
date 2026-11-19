@@ -10,7 +10,7 @@ A small, static page that brings together frequently used learning and productiv
 
 ## Local preview
 
-Open `index.html directly in a browser. The page uses plain HTML and CSS and does not require a build step or JavaScript dependencies.
+Open `index.html` directly in a browser. The page uses plain HTML and CSS and does not require a build step or JavaScript dependencies.
 
 ## Deployment
 
