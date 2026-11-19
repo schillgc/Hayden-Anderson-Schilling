@@ -15,3 +15,7 @@ Open `index.html` directly in a browser. The page uses plain HTML and CSS and do
 ## Deployment
 
 This repository is configured for GitHub Pages. The site is served from the repository's published branch/folder configuration in GitHub.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for this repository's security, privacy, and responsible-use guidance.
