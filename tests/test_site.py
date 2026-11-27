@@ -63,7 +63,10 @@ class StaticSiteContractTests(unittest.TestCase):
 
     def test_local_stylesheet_and_dependency_free_page_are_preserved(self):
         self.assertIn('href="styles.css"', self.html)
-        self.assertNotRegex(self.html, r"(?i)<script[^>]+src=")
+        self.assertNotRegex(self.html, r"(?i)<script\b")
+        self.assertIn('http-equiv="Content-Security-Policy"', self.html)
+        self.assertIn("default-src 'none'", self.html)
+        self.assertIn("script-src 'none'", self.html)
         self.assertNotIn("http://", self.html)
 
     def test_keyboard_focus_and_reduced_motion_preferences_are_supported(self):
